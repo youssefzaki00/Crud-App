@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crud</title>
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <!-- main css file -->
+  <link rel="stylesheet" href="CSS/main.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;&amp;&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="imgs/favicon_io/favicon-32x32.png" type="image/png">
+  <link rel="icon" href="imgs/favicon_io/favicon-16x16.png" type="image/png">
+</head>
+
+<body>
+  <div class="crud">
+    <div class="header">
+      <h2>cruds</h2>
+      <span>create read update delete search</span>
+    </div>
+    <div class="inputs">
+      <input type="text" id="title" placeholder="title">
+      <div class="price">
+        <input type="number" placeholder="price" id="price">
+        <input type="number" placeholder="taxes" id="taxes">
+        <input type="number" placeholder="ads" id="ads">
+        <input type="number" placeholder="discount" id="discount">
+        <span id="total"> 0EG</span>
+      </div>
+      <input type="number" placeholder="count" id="count">
+      <input type="text" placeholder="category" id="category">
+      <button id="Submit">Create</button>
+    </div>
+    <div class="outputs">
+      <div class="searchSection">
+        <input type="search" id="searchEngine" placeholder="Search" aria-label="Search through site content">
+        <div class="btnSearch">
+          <button  id="searchTitle">Search By Title</button>
+          <button class="deleteAll">Delete All</button>
+          <button id="searchCategory">Search By Category</button>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>price</th>
+          <th>taxes</th>
+          <th>ads</th>
+          <th>discount</th>
+          <th>total</th>
+          <th>category</th>
+          <th>update</th>
+          <th>delete</th>
+
+        </tr>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="choice">
+    are you sure deleting all products?
+    <div class="icons">
+      <div class="yes"><i class="fa-solid fa-check"></i></div>
+      <div class="no"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+  </div>
+  <script src="js/all.min.js"></script>
+  <script src="js/main.js">
+  </script>
+</body>
+
+</html>
